@@ -1,0 +1,115 @@
+fsam7400 (0.5.1-2) unstable; urgency=low
+
+  * fix Kel's mail address.
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Fri,  2 Mar 2007 03:04:16 +0100
+
+fsam7400 (0.5.1-1) unstable; urgency=low
+
+  * New upstream release
+  * debian/rules cleanup
+  * Versioned build-dep of debhelper 5.0.37 for dh_installmodules
+  * New maintainer email address
+  * Adjust rules.modules for rewritten Makefile
+  * Add patch for 2.6.19
+
+ -- Kel Modderman <kelmo@kanotixguide.org>  Mon, 16 Oct 2006 20:42:22 +1000
+
+fsam7400 (0.4.0beta-12) unstable; urgency=low
+
+  * Add fixes for 2.6.17
+  * Tweak tarball generation
+  * Bump Standards-Version
+
+ -- Kel Modderman <kelrin@tpg.com.au>  Tue,  4 Jul 2006 18:32:49 +1000
+
+fsam7400 (0.4.0beta-11) unstable; urgency=low
+
+  * Bump debhelper compat level to 5
+  * Binary modules depend on linux-image
+  * Remove bogus targets from rules.modules
+  * Module binary provide fsam7400-modules
+  * Use dh_installmodules to handle modules post{inst,rm}
+
+ -- Kel Modderman <kelrin@tpg.com.au>  Mon, 20 Mar 2006 22:13:16 +1000
+
+fsam7400 (0.4.0beta-10) unstable; urgency=low
+
+  * Clean up debian/rules.
+    - loop install debian files
+    - use bzip2
+  * bzip2 added to relevant dependencies.
+  * build-essential removed from build-dep field.
+  * Remove fsam7400-source.install.
+  * Add fsam7400-source.dirs.
+  * Remove cdbs auto update of control file.
+    - removed control.in.
+  * Add README.debian.
+  * Add watch file.
+
+ -- Kel Modderman <kelrin@tpg.com.au>  Thu, 29 Sep 2005 00:40:17 +1000
+
+fsam7400 (0.4.0beta-9) unstable; urgency=low
+
+  * Remove debconf depends from postinst script.
+  * Correct copyright file.
+
+ -- Kel Modderman <kelrin@tpg.com.au>  Fri, 02 Sep 2005 23:01:48 +1000
+
+fsam7400 (0.4.0beta-8) unstable; urgency=low
+
+  * Made the module build command more robust.
+  * Registered fsam7400 with mod-ass front-end.
+  * Removed depends on kernel-package.
+
+ -- Kel Modderman <kelrin@tpg.com.au>  Fri, 26 Aug 2005 12:43:33 +1000
+
+fsam7400 (0.4.0beta-7) unstable; urgency=low
+
+  * Changed name of source package.
+
+ -- Kel Modderman <kelrin@tpg.com.au>  Thu, 18 Aug 2005 23:08:05 +1000
+
+fsam7400-source (0.4.0beta-6) unstable; urgency=low
+
+  * cdbs now handles fsam7400-source preparation.
+    - added fsam7400-source.install
+    - mod-ass targets moved to rules.modules
+
+ -- Kel Modderman <kelrin@tpg.com.au>  Wed, 17 Aug 2005 13:32:06 +1000
+
+fsam7400-source (0.4.0beta-5) unstable; urgency=low
+
+  * Removed nostrip option.
+  * Cleaned up kdist_clean target.
+
+ -- Kel Modderman <kelrin@tpg.com.au>  Thu, 11 Aug 2005 12:39:35 +1000
+
+fsam7400-source (0.4.0beta-4) unstable; urgency=low
+
+  * Added CFLAGS / DEB_BUILD_OPTIONS options.
+  * Moved build-indep rules to install-indep.
+
+ -- Kel Modderman <kelrin@tpg.com.au>  Fri, 05 Aug 2005 13:32:36 +1000
+
+fsam7400-source (0.4.0beta-3) unstable; urgency=low
+
+  * Added missing dh_testdir in build-indep.
+
+ -- Kel Modderman <kelrin@tpg.com.au>  Sun, 31 Jul 2005 01:40:52 +1000
+
+fsam7400-source (0.4.0beta-2) unstable; urgency=low
+
+  * Revamped debhelper and kernel-package targets.
+  * Defined PACKAGE.
+  * Added modextension variable for kernel module extensions.
+  * Added fsam7400-source.docs.
+
+ -- Kel Modderman <kelrin@tpg.com.au>  Sun, 31 Jul 2005 00:31:37 +1000
+
+fsam7400-source (0.4.0beta-1) unstable; urgency=low
+
+  * Initial release.
+
+ -- Kel Modderman <kelrin@tpg.com.au>  Thu,  7 Jul 2005 23:11:29 +1000
+

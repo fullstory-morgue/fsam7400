@@ -1,0 +1,22 @@
+fsam7400 for debian
+===================
+
+This package provides the fsam7400 source code that can be used to build 
+modules that work with your custom built linux kernel. The source files are 
+located in /usr/src/fsam7400.tar.bz2; unpacking that file in /usr/src will
+produce a build tree in /usr/src/modules/fsam7400/ (The tar file can also be 
+unpacked elsewhere).
+
+Building fsam7400 kernel modules with module-assistant
+======================================================
+
+Please install the module-assistant package and issue the following commands
+in a shell:-
+
+  $ m-a prepare
+  $ m-a a-i fsam7400
+
+m-a is short for module-assistant, and a-i is short for auto-install. Please
+see the module-assistant documentation for futher details about this process.
+
+ -- Kel Modderman <kelrin@tpg.com.au>  Tue, 28 Sep 2005 10:33:45 +1000
