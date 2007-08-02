@@ -1,8 +1,10 @@
-fsam7400 (0.5.1-3) UNRELEASED; urgency=low
+fsam7400 (0.5.1-3) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * Remove reference to obsolete kernel-image-_KVERS_ in
+    debian/control.modules.in.
+  * add myself to uploaders.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 05 Jun 2007 14:30:46 +0200
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Thu, 02 Aug 2007 23:25:12 +0200
 
 fsam7400 (0.5.1-2) unstable; urgency=low
 

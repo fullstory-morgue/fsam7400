@@ -2,11 +2,12 @@ Source: fsam7400
 Section: net
 Priority: optional
 Maintainer: Kel Modderman <kel@otaku42.de>
+Uploaders: Stefan Lippers-Hollmann <s.l-h@gmx.de>
 Build-Depends: debhelper (>= 5.0.37), bzip2
 Standards-Version: 3.7.2
 
 Package: fsam7400-modules-_KVERS_
-Depends: linux-image-_KVERS_ | kernel-image-_KVERS_
+Depends: linux-image-_KVERS_
 Provides: fsam7400-modules
 Architecture: any
 Description: fsam7400 modules for Linux (kernel _KVERS_).
