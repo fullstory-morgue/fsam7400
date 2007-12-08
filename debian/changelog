@@ -1,3 +1,9 @@
+fsam7400 (0.5.1-7) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 08 Dec 2007 17:02:43 +0100
+
 fsam7400 (0.5.1-6) unstable; urgency=low
 
   * properly escape debian/watch.
