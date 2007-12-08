@@ -1,6 +1,5 @@
-fsam7400 (0.5.1-6) UNRELEASED; urgency=low
+fsam7400 (0.5.1-6) unstable; urgency=low
 
-  * NOT RELEASED YET
   * properly escape debian/watch.
 
  -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 08 Dec 2007 13:23:29 +0100
