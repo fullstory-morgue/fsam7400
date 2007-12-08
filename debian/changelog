@@ -1,9 +1,9 @@
-fsam7400 (0.5.1-5) UNRELEASED; urgency=low
+fsam7400 (0.5.1-5) unstable; urgency=low
 
-  * NOT RELEASED YET
   * update to Standards-Version 3.7.3, no changes necessary.
+  * fix kernel 2.6.24 compatibility.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 03 Dec 2007 13:49:33 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Sat, 08 Dec 2007 02:29:07 +0100
 
 fsam7400 (0.5.1-4) unstable; urgency=low
 
