@@ -1,3 +1,9 @@
+fsam7400 (0.5.1-9) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Wed, 20 Feb 2008 22:26:56 +0100
+
 fsam7400 (0.5.1-8) unstable; urgency=low
 
   * appease lintian and write (C) as © in debian/copyright.
