@@ -24,10 +24,10 @@ binary-modules: kdist_config
 	dh_clean -k
 	
 	$(MAKE) -C $(CURDIR) KERNELSRC=$(KSRC) KERNELVERSION=$(KVERS)
-
+	
 	dh_installdirs				lib/modules/$(KVERS)/misc
 	dh_install fsam7400$(modextension)	lib/modules/$(KVERS)/misc
-
+	
 	dh_installdebconf
 	dh_installdocs
 	dh_compress

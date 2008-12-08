@@ -1,9 +1,11 @@
-fsam7400 (0.5.1-9) UNRELEASED; urgency=low
+fsam7400 (0.5.1-9) unstable; urgency=low
 
-  * NOT RELEASED YET
   * make lintian happy and depend on ${misc:Depends}.
+  * switch to dh7.
+  * switch to quilt.
+  * bump compat level to 7.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 08 Dec 2008 02:40:27 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 08 Dec 2008 22:24:56 +0100
 
 fsam7400 (0.5.1-8) unstable; urgency=low
 

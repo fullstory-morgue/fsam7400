@@ -1,7 +1,9 @@
-diff -Nur trunk/Makefile trunk.new/Makefile
---- trunk/Makefile	2007-12-06 17:27:57.000000000 +0100
-+++ trunk.new/Makefile	2007-12-08 02:17:39.000000000 +0100
-@@ -5,7 +5,7 @@
+add kernel 2.6.24 compatibility.
+submitted upstream 2007-12-16.
+
+--- a/Makefile
++++ b/Makefile
+@@ -5,7 +5,7 @@ KERNELMAJOR=$(shell echo $(KERNELVERSION
  CONFIG_FSAM7400?=m
  obj-$(CONFIG_FSAM7400) += fsam7400.o
  
@@ -10,7 +12,7 @@ diff -Nur trunk/Makefile trunk.new/Makefile
  INCLUDE=-I$(KERNELSRC)/include
  
  ifeq ($(KERNELMAJOR), 2.6)
-@@ -29,7 +29,7 @@
+@@ -29,7 +29,7 @@ fsam7400.ko: $(SOURCE) 
  	$(MAKE) -C $(KERNELSRC) SUBDIRS=$(PWD) modules
  
  fsam7400.o: $(SOURCE)

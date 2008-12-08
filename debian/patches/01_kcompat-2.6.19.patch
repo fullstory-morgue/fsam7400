@@ -1,0 +1,27 @@
+add kernel 2.6.19 compatibility.
+submitted upstream 2007-12-16.
+
+--- a/fsam7400.c
++++ b/fsam7400.c
+@@ -28,7 +28,9 @@
+ 
+ *******************************************************************************/
+ 
++#ifndef AUTOCONF_INCLUDED
+ #include <linux/config.h>
++#endif
+ #ifdef CONFIG_X86
+ #include <linux/version.h>
+ #if LINUX_VERSION_CODE >= KERNEL_VERSION(2,6,0)
+@@ -45,7 +47,11 @@
+ #include <linux/ctype.h>
+ #include <linux/string.h>
+ #include <linux/kmod.h>
++#if LINUX_VERSION_CODE >= KERNEL_VERSION(2,6,19)
++#include <linux/io.h>
++#else
+ #include <asm/io.h>
++#endif
+ #include <asm/uaccess.h>
+ 
+ #define DRV_NAME         "fsam7400"

@@ -1,9 +1,23 @@
 #!/usr/bin/make -f
 
-include /usr/share/cdbs/1/rules/debhelper.mk
-include /usr/share/cdbs/1/rules/simple-patchsys.mk
+# Uncomment this to turn on verbose mode.
+#export DH_VERBOSE=1
 
-install/fsam7400-source::
+include /usr/share/quilt/quilt.make
+
+build: build-stamp
+build-stamp: $(QUILT_STAMPFN)
+	dh build --before configure
+	dh build --after build
+	touch $@
+
+clean: unpatch
+	dh $@
+
+install: install-stamp
+install-stamp: build-stamp
+	dh install --before dh_auto_install
+	
 	# Enforce executable bit on debian/rules, and create directory
 	# structure for modules source
 	install -D -m 0755 debian/rules.modules \
@@ -22,3 +36,16 @@ install/fsam7400-source::
 	# Prepare the debian source tarball
 	tar jcf debian/fsam7400-source/usr/src/fsam7400.tar.bz2 \
 		-C debian/tmp modules
+	
+	dh install --after dh_auto_install
+	touch $@
+
+binary-arch: install
+	# We have nothing to do by default.
+	#dh $@
+
+binary-indep: install
+	dh $@
+
+binary: binary-arch binary-indep
+.PHONY: binary binary-arch binary-indep install clean build
