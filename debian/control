@@ -3,14 +3,20 @@ Section: net
 Priority: optional
 Maintainer: Kel Modderman <kel@otaku42.de>
 Uploaders: Stefan Lippers-Hollmann <s.l-h@gmx.de>
-Build-Depends: cdbs, debhelper (>= 6), bzip2, patchutils
+Build-Depends: cdbs,
+               debhelper (>= 6),
+               bzip2,
+               patchutils
 Standards-Version: 3.7.3
 Vcs-Svn: svn://svn.berlios.de/fullstory/fsam7400/trunk
 Vcs-Browser: http://svn.berlios.de/wsvn/fullstory/fsam7400/trunk/
 
 Package: fsam7400-source
 Architecture: all
-Depends: debhelper (>= 5.0.37), module-assistant, bzip2
+Depends: ${misc:Depends},
+         debhelper (>= 5.0.37),
+         module-assistant,
+         bzip2
 Description: SW RF kill switch driver for Fujitsu Siemens Amilo M 7400
  The fsam7400 module for the Linux kernel provides support for the
  software RF kill switches on the Fujitsu Siemens Amilo M 7400 laptop.

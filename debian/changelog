@@ -1,8 +1,9 @@
 fsam7400 (0.5.1-9) UNRELEASED; urgency=low
 
   * NOT RELEASED YET
+  * make lintian happy and depend on ${misc:Depends}.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Wed, 20 Feb 2008 22:26:56 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 08 Dec 2008 02:40:27 +0100
 
 fsam7400 (0.5.1-8) unstable; urgency=low
 
