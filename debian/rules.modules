@@ -7,13 +7,6 @@ MA_DIR ?= /usr/share/modass
 
 PATCHLEVEL := $(shell echo $(KVERS) | cut -d. -f2)
 
-# kernel module filename extension
-ifeq ($(PATCHLEVEL),6)
-	modextension := .ko
-else
-	modextension := .o
-endif
-
 .PHONY: kdist_config
 kdist_config: prep-deb-files
 
@@ -25,8 +18,8 @@ binary-modules: kdist_config
 	
 	$(MAKE) -C $(CURDIR) KERNELSRC=$(KSRC) KERNELVERSION=$(KVERS)
 	
-	dh_installdirs				lib/modules/$(KVERS)/misc
-	dh_install fsam7400$(modextension)	lib/modules/$(KVERS)/misc
+	dh_installdirs		lib/modules/$(KVERS)/misc
+	dh_install fsam7400.ko	lib/modules/$(KVERS)/misc
 	
 	dh_installdebconf
 	dh_installdocs
