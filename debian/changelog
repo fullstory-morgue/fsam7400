@@ -1,8 +1,9 @@
-fsam7400 (0.5.1-10) UNRELEASED; urgency=low
+fsam7400 (0.5.1-10) unstable; urgency=low
 
-  * NOT RELEASED YET
+  * switch from dh_clean -k to dh_prep, to become compliant with debhelper 7
+    and to make lintian happy.
 
- -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Mon, 08 Dec 2008 22:27:04 +0100
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 27 Jan 2009 17:32:45 +0100
 
 fsam7400 (0.5.1-9) unstable; urgency=low
 
