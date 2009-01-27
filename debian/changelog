@@ -1,3 +1,9 @@
+fsam7400 (0.5.1-12) UNRELEASED; urgency=low
+
+  * NOT RELEASED YET
+
+ -- Stefan Lippers-Hollmann <s.l-h@gmx.de>  Tue, 27 Jan 2009 17:49:24 +0100
+
 fsam7400 (0.5.1-11) unstable; urgency=low
 
   * remove obsolete kernel 2.4 support.
